@@ -7,5 +7,7 @@ use App\Repositories\Base\RepositoryInterface;
 interface HandleInterface
 {
     public function imageHandle($files_upload);
-    public function urlNormal($str);
+
+
+
 }

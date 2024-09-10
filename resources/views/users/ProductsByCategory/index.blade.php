@@ -154,9 +154,9 @@
                     <div class="item-name">
                         <h4>{{$value->name_product}}</h4>
                     </div>
-                    <div class="item-description">
+                    <!-- <div class="item-description">
                         <p>{{$value->description_most}}</p>
-                    </div>
+                    </div> -->
                     <div class="item-price">
                         <h4>{{$value->price}}</h4>
                     </div>
@@ -184,9 +184,9 @@
                     <div class="item-name">
                         <h4>{{$value->name_product}}</h4>
                     </div>
-                    <div class="item-description">
+                    <!-- <div class="item-description">
                         <p>{{$value->description_most}}</p>
-                    </div>
+                    </div> -->
                     <div class="item-price">
                         <h4>{{$value->price}}</h4>
                     </div>

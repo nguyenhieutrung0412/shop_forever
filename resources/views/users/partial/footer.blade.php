@@ -1,31 +1,49 @@
 {{-- footer --}}
 <footer>
     <div class="global-footer">
-        <div class="footer-first">
-            <div class="logo">
-                <a href="/"><img src="{{ asset('/images/logoo.png') }}" alt="logo"></a>
-            </div>
-            <div class="infomation">
-                <p><i class="fa-solid fa-location-dot"></i> Thủ Đức, Hồ Chí Minh</p>
-                <p><i class="fa-solid fa-phone"></i> 023-5664-468</p>
-                <p><i class="fa-solid fa-envelope"></i> admin@admin.com</p>
-            </div>
-            <div class="contact">
+    <div class="contact">
                 <div class="facebook">
-                    <a href="">
-                        <img src="{{ asset('/images/icon_fb.png') }}" alt="facebook">
+                    <a href="https://web.facebook.com/profile.php?id=100089563795856">
+                        <img src="{{ asset('/images/fb123.png') }}" alt="facebook">
                     </a>
                 </div>
-              </div>
+    </div>
+        <div class="footer-first">
+            <div class="logo">
+                <a href="/"><img src="{{ asset('/images/logo5.png') }}" alt="logo"></a>
+            </div>
+            <div class="infomation">
+                <p><i class="fa-solid fa-location-dot"></i> Bình Thạnh, Hồ Chí Minh</p>
+                <p><i class="fa-solid fa-phone"></i> 035 874 2101</p>
+                <p><i class="fa-solid fa-envelope"></i> aloeverahcm@gmail.com</p>
+            </div>
             <div class="store-active">
                 <p>Giờ hoạt động: 6AM - 22PM</p>
             </div>
-          
         </div>
         <div class="footer-second">
-
-            <h3>Copyright © 2024 aloeveravn.com. All Rights Reserved.</h3>
+                <p><i class="3"></i> <a href="/"> Trang chủ </a></p>
+                <p><i class="4"></i> Tin tức</p>
+                <p><i class="5"></i><a href="/chinh-sach">Chính sách</a></p>
+        @if(Auth::Check())
+        <div class="loginow">
+            <a href="{{ route('admin.product') }}" class="admin-btn"><img src="{{ asset('/images/admins.png') }}" alt="admin"></a>
         </div>
-    </div>
+        @else
+        <div class="loginow">
+            <button class="login-btn">Đăng nhập </button>
+        </div>
+        @endif
+               <p>copyright © 2024 aloeveravn.com.</p>
+        </div>
+        </div>
+    
 </footer>
-{{-- end footer --}}
+
+  <!-- làm admin
+  chỉnh header
+  giảm giá
+  chính sách
+  tin tức
+
+         -->

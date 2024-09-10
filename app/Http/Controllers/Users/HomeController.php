@@ -50,13 +50,14 @@ class HomeController extends Controller
              {
                  $product[$i]['fixmobile'] = 'fixmobile';
              }
-             
+            $link = Str::slug($product[$i]['name_product']);
             // 
-            $product[$i]['id_new'] = $this->handleRepo->id_encode($product[$i]['id']);
-        
+            $product[$i]['id_new'] =$link .'-'. $this->handleRepo->id_encode($product[$i]['id']);
+             
             //chuyển chuỗi thành mảng 
             $product[$i]['images'] = json_decode($product[$i]['images']);
-            
+            //$product[$i]['name_link'] = $this->handleRepo->urlNormal($product[$i]['name_product']);
+
              //Chuyển đổi tiền tệ
              $product[$i]['price'] = $this->handleRepo->currency_format($product[$i]['price']);
             // Hiển thị mô tả ngắn gọn cho trang sản phẩm

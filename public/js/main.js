@@ -38,6 +38,32 @@ let imgshow = document.querySelector('.product-info_imgbig img');
                 $(".modal").hide();
             });
         });
+        // $(".detail_product").on("click",(e) => {
+        //     console.log(e.target.offsetParent.dataset);
+        //     show_product(e);    
+        // })
+        //hiển thị sản phẩm theo id
+        // function show_product(e){
+        //     data = e.target.offsetParent.dataset;
+        //     // console.log($data['id']);
+            
+           
+        //         $.ajax({
+        //             method:"POST",
+        //             url:data.route,
+        //             data:{
+        //                 data:data
+        //             },
+        //             headers: {
+        //                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        //            },
+        //         }).done((e)=>{
+        //             console.log(e)
+        //             location.href = 
+        //         })
+            
+        // }
+        //end xử lý thay đổi tình trạng sản phẩm
     });
 
  
